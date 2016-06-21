@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.GUI", "LPWF.GUI\LPWF.GUI.csproj", "{A839A64F-A980-4804-9EDB-992C261D9713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.Database", "LPWF.Database\LPWF.Database.csproj", "{A4FCD37C-D528-4144-B6F2-5A25C2E6829E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.Controller", "LPWF.Controller\LPWF.Controller.csproj", "{D4953307-FD02-459A-A71E-2248EB0C27FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.Model", "LPWF.Model\LPWF.Model.csproj", "{1718D77D-2070-4271-98DC-397AE047031F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.LPWF.Database", "Test.LPWF.Database\Test.LPWF.Database.csproj", "{CACBE6A4-C92C-4054-8393-575D0B0845F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.LPWF.Model", "Test.LPWF.Model\Test.LPWF.Model.csproj", "{F55A0BBC-0962-49BD-8CE7-888593101760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.LPWF.Controller", "Test.LPWF.Controller\Test.LPWF.Controller.csproj", "{EA58DC02-EA03-4028-90AC-7E00EDA25346}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A839A64F-A980-4804-9EDB-992C261D9713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A839A64F-A980-4804-9EDB-992C261D9713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A839A64F-A980-4804-9EDB-992C261D9713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A839A64F-A980-4804-9EDB-992C261D9713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4FCD37C-D528-4144-B6F2-5A25C2E6829E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4FCD37C-D528-4144-B6F2-5A25C2E6829E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4FCD37C-D528-4144-B6F2-5A25C2E6829E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4FCD37C-D528-4144-B6F2-5A25C2E6829E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4953307-FD02-459A-A71E-2248EB0C27FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4953307-FD02-459A-A71E-2248EB0C27FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4953307-FD02-459A-A71E-2248EB0C27FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4953307-FD02-459A-A71E-2248EB0C27FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1718D77D-2070-4271-98DC-397AE047031F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1718D77D-2070-4271-98DC-397AE047031F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1718D77D-2070-4271-98DC-397AE047031F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1718D77D-2070-4271-98DC-397AE047031F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACBE6A4-C92C-4054-8393-575D0B0845F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACBE6A4-C92C-4054-8393-575D0B0845F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACBE6A4-C92C-4054-8393-575D0B0845F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACBE6A4-C92C-4054-8393-575D0B0845F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55A0BBC-0962-49BD-8CE7-888593101760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55A0BBC-0962-49BD-8CE7-888593101760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55A0BBC-0962-49BD-8CE7-888593101760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55A0BBC-0962-49BD-8CE7-888593101760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA58DC02-EA03-4028-90AC-7E00EDA25346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA58DC02-EA03-4028-90AC-7E00EDA25346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA58DC02-EA03-4028-90AC-7E00EDA25346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA58DC02-EA03-4028-90AC-7E00EDA25346}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
