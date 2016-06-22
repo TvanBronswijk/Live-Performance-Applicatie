@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.GUI", "LPWF.GUI\LPWF.GUI.csproj", "{A839A64F-A980-4804-9EDB-992C261D9713}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.Database", "LPWF.Database\LPWF.Database.csproj", "{A4FCD37C-D528-4144-B6F2-5A25C2E6829E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.Controller", "LPWF.Controller\LPWF.Controller.csproj", "{D4953307-FD02-459A-A71E-2248EB0C27FB}"
@@ -17,16 +15,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.LPWF.Model", "Test.LPW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.LPWF.Controller", "Test.LPWF.Controller\Test.LPWF.Controller.csproj", "{EA58DC02-EA03-4028-90AC-7E00EDA25346}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.GUI", "LPWF.GUI\LPWF.GUI.csproj", "{069C25F8-250C-46B4-9B3E-89B4EADFCAB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.IO", "LPWF.IO\LPWF.IO.csproj", "{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A839A64F-A980-4804-9EDB-992C261D9713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A839A64F-A980-4804-9EDB-992C261D9713}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A839A64F-A980-4804-9EDB-992C261D9713}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A839A64F-A980-4804-9EDB-992C261D9713}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A4FCD37C-D528-4144-B6F2-5A25C2E6829E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4FCD37C-D528-4144-B6F2-5A25C2E6829E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4FCD37C-D528-4144-B6F2-5A25C2E6829E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +49,14 @@ Global
 		{EA58DC02-EA03-4028-90AC-7E00EDA25346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA58DC02-EA03-4028-90AC-7E00EDA25346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA58DC02-EA03-4028-90AC-7E00EDA25346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069C25F8-250C-46B4-9B3E-89B4EADFCAB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069C25F8-250C-46B4-9B3E-89B4EADFCAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069C25F8-250C-46B4-9B3E-89B4EADFCAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069C25F8-250C-46B4-9B3E-89B4EADFCAB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
