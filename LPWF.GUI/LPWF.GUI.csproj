@@ -49,6 +49,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.DataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,6 +122,12 @@
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Log\" />
     <Folder Include="Views\Weather\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LPWF.Controller\LPWF.Controller.csproj">
+      <Project>{d4953307-fd02-459a-a71e-2248eb0c27fb}</Project>
+      <Name>LPWF.Controller</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

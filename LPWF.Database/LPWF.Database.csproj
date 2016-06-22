@@ -42,9 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AdminRepository.cs" />
+    <Compile Include="Repository\BijkomendProductRepository.cs" />
+    <Compile Include="Repository\BootRepository.cs" />
+    <Compile Include="Repository\HuurcontractRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\LPWF.Model\LPWF.Model.csproj">
+      <Project>{1718d77d-2070-4271-98dc-397ae047031f}</Project>
+      <Name>LPWF.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Oracle\create.sql" />
   </ItemGroup>

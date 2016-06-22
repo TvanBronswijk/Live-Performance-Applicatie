@@ -40,7 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminController.cs" />
+    <Compile Include="BijkomendProductController.cs" />
+    <Compile Include="BootController.cs" />
+    <Compile Include="HuurcontractController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LPWF.Database\LPWF.Database.csproj">
+      <Project>{a4fcd37c-d528-4144-b6f2-5a25c2e6829e}</Project>
+      <Name>LPWF.Database</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.LPWF.Controller", "Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.GUI", "LPWF.GUI\LPWF.GUI.csproj", "{069C25F8-250C-46B4-9B3E-89B4EADFCAB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LPWF.IO", "LPWF.IO\LPWF.IO.csproj", "{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,10 +51,6 @@ Global
 		{069C25F8-250C-46B4-9B3E-89B4EADFCAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{069C25F8-250C-46B4-9B3E-89B4EADFCAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{069C25F8-250C-46B4-9B3E-89B4EADFCAB8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A41BAB24-38EF-4F04-BEAA-7C94EF687BE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
