@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BerekenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BerekenForm.Designer.cs">
+      <DependentUpon>BerekenForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HoofdschermForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BerekenForm.resx">
+      <DependentUpon>BerekenForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoofdschermForm.resx">
       <DependentUpon>HoofdschermForm.cs</DependentUpon>
     </EmbeddedResource>

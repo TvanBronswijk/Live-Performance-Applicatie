@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace LPWF.Controller
 {
@@ -11,12 +12,16 @@ namespace LPWF.Controller
     {
         public void WriteToTXT(Huurcontract ToWrite)
         {
-            throw new NotImplementedException();
+            Write(ToWrite.ToString());
         }
 
         private void Write(string ToWrite)
         {
-            throw new NotImplementedException();
+            using (StreamWriter wrt = new StreamWriter("output.txt"))
+            {
+                wrt.Write(ToWrite);
+            }
+                
         }
     }
 }

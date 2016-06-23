@@ -18,9 +18,14 @@ namespace LPWF.Controller
             HuurRepo.Create(huurcontract);
         }
 
-        public double Berekenen()
+        public double Berekenen(int Boot, int Motorboot, int product, int zee, double bedrag)
         {
-
+            double total = ((bedrag - (10 * Boot) - (15 * Motorboot) - (1.25 * product) - (zee * 2)) / 1);
+            if(total > 12)
+            {
+                return 12;
+            }
+            return total;
         }
     }
 }

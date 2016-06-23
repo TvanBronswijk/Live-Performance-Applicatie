@@ -52,13 +52,13 @@
             this.LbBestelling = new System.Windows.Forms.ListBox();
             this.BtnLegen = new System.Windows.Forms.Button();
             this.BtnVerhuren = new System.Windows.Forms.Button();
+            this.BtnBerekenen = new System.Windows.Forms.Button();
             this.NudProducten = new System.Windows.Forms.NumericUpDown();
             this.BtnProductToevoegen = new System.Windows.Forms.Button();
             this.CbProducten = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnBootToevoegen = new System.Windows.Forms.Button();
             this.CbBoten = new System.Windows.Forms.ComboBox();
-            this.BtnBerekenen = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NudMeren)).BeginInit();
             this.GbHuidigeBestelling.SuspendLayout();
@@ -148,6 +148,11 @@
             // NudMeren
             // 
             this.NudMeren.Location = new System.Drawing.Point(195, 184);
+            this.NudMeren.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
             this.NudMeren.Minimum = new decimal(new int[] {
             1,
             0,
@@ -320,6 +325,16 @@
             this.BtnVerhuren.UseVisualStyleBackColor = true;
             this.BtnVerhuren.Click += new System.EventHandler(this.BtnVerhuren_Click);
             // 
+            // BtnBerekenen
+            // 
+            this.BtnBerekenen.Location = new System.Drawing.Point(189, 12);
+            this.BtnBerekenen.Name = "BtnBerekenen";
+            this.BtnBerekenen.Size = new System.Drawing.Size(75, 23);
+            this.BtnBerekenen.TabIndex = 12;
+            this.BtnBerekenen.Text = "Berekenen";
+            this.BtnBerekenen.UseVisualStyleBackColor = true;
+            this.BtnBerekenen.Click += new System.EventHandler(this.BtnBerekenen_Click);
+            // 
             // NudProducten
             // 
             this.NudProducten.Location = new System.Drawing.Point(195, 150);
@@ -383,15 +398,6 @@
             this.CbBoten.Name = "CbBoten";
             this.CbBoten.Size = new System.Drawing.Size(121, 21);
             this.CbBoten.TabIndex = 4;
-            // 
-            // BtnBerekenen
-            // 
-            this.BtnBerekenen.Location = new System.Drawing.Point(193, 12);
-            this.BtnBerekenen.Name = "BtnBerekenen";
-            this.BtnBerekenen.Size = new System.Drawing.Size(75, 23);
-            this.BtnBerekenen.TabIndex = 12;
-            this.BtnBerekenen.Text = "Berekenen";
-            this.BtnBerekenen.UseVisualStyleBackColor = true;
             // 
             // HoofdschermForm
             // 

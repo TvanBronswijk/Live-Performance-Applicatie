@@ -160,5 +160,11 @@ namespace LPWF.GUI.WinForms
             }
 
         }
+
+        private void BtnBerekenen_Click(object sender, EventArgs e)
+        {
+            BerekenForm Ber = new BerekenForm();
+            Ber.Show();
+        }
     }
 }
