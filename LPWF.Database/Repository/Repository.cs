@@ -10,12 +10,13 @@ namespace LPWF.Database.Repository
     public abstract class Repository<T>
     {
         private string LocalDB = "DATA SOURCE=Localhost;USER ID=SYSTEM;PASSWORD=Oracle123";
+        private string AthenaDB = "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=fhictora01.fhict.local)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=fhictora)));User ID=dbi294604;PASSWORD=Passcode123;";
         protected string Table = "";
 
         protected OracleConnection Db;
         public Repository()
         {
-            Db = new OracleConnection(LocalDB);
+            Db = new OracleConnection(AthenaDB);
         }
 
         public abstract void Alter(T entity);
