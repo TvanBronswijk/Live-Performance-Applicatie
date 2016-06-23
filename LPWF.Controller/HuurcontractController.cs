@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LPWF.Database.Repository;
+using LPWF.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,11 @@ namespace LPWF.Controller
 {
     public class HuurcontractController
     {
+        HuurcontractRepository HuurRepo = new HuurcontractRepository();
+
+        public List<Huurcontract> GetAll()
+        {
+            return HuurRepo.FindAll();
+        }
     }
 }

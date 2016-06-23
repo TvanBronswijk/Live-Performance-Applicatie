@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4953307-FD02-459A-A71E-2248EB0C27FB}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{45FCB684-5262-4F63-AC26-23FEBBC9104D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LPWF.Controller</RootNamespace>
-    <AssemblyName>LPWF.Controller</AssemblyName>
+    <RootNamespace>LPWF.GUI.WinForms</RootNamespace>
+    <AssemblyName>LPWF.GUI.WinForms</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -36,23 +39,59 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminController.cs" />
-    <Compile Include="BijkomendProductController.cs" />
-    <Compile Include="BootController.cs" />
-    <Compile Include="HuurcontractController.cs" />
-    <Compile Include="InputOutputController.cs" />
+    <Compile Include="HoofdschermForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoofdschermForm.Designer.cs">
+      <DependentUpon>HoofdschermForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VerhuurController.cs" />
-    <Compile Include="WeerController.cs" />
+    <EmbeddedResource Include="HoofdschermForm.resx">
+      <DependentUpon>HoofdschermForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LPWF.Database\LPWF.Database.csproj">
-      <Project>{a4fcd37c-d528-4144-b6f2-5a25c2e6829e}</Project>
-      <Name>LPWF.Database</Name>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LPWF.Controller\LPWF.Controller.csproj">
+      <Project>{d4953307-fd02-459a-a71e-2248eb0c27fb}</Project>
+      <Name>LPWF.Controller</Name>
     </ProjectReference>
     <ProjectReference Include="..\LPWF.Model\LPWF.Model.csproj">
       <Project>{1718d77d-2070-4271-98dc-397ae047031f}</Project>

@@ -44,6 +44,8 @@
     <Compile Include="BijkomendProduct.cs" />
     <Compile Include="Boot.cs" />
     <Compile Include="Huurcontract.cs" />
+    <Compile Include="IVehuurable.cs" />
+    <Compile Include="MotorBoot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

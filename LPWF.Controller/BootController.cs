@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LPWF.Database.Repository;
+using LPWF.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,11 @@ namespace LPWF.Controller
 {
     public class BootController
     {
+        BootRepository BootRepo = new BootRepository();
+
+        public List<Boot> GetAll()
+        {
+            return BootRepo.FindAll();
+        }
     }
 }
