@@ -45,12 +45,21 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BerekenTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LPWF.Controller\LPWF.Controller.csproj">
+      <Project>{d4953307-fd02-459a-a71e-2248eb0c27fb}</Project>
+      <Name>LPWF.Controller</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

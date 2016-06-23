@@ -18,12 +18,26 @@ namespace LPWF.Controller
             HuurRepo.Create(huurcontract);
         }
 
-        public double Berekenen(int Boot, int Motorboot, int product, int zee, double bedrag)
+        public double Berekenen(int Kano, int Zeilboot, int Motorboot, int product, int zee, double bedrag, int dagen)
         {
-            double total = ((bedrag - (10 * Boot) - (15 * Motorboot) - (1.25 * product) - (zee * 2)) / 1);
+            double total = bedrag;
+            total -= Kano * 10 * dagen;
+            total -= Zeilboot * 10 * dagen;
+            total -= Motorboot * 15 * dagen;
+            total -= product * 1.25 * dagen;
+            total -= zee * 2;
+            if (total > 10)
+            {
+                total -= Math.Floor(total - 10) * (Zeilboot + Motorboot) * .5;
+            }
+
             if(total > 12)
             {
                 return 12;
+            }
+            if(total < 0)
+            {
+                return 0;
             }
             return total;
         }
