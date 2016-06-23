@@ -39,7 +39,7 @@ CREATE TABLE Persoon(
   Email varchar2(100) NOT NULL
 );
 
-INSERT INTO Persoon VALUES (1, 'Dude', 'Jan@Jansen.com');
+INSERT INTO Persoon VALUES (1, 'Leif Erikson', 'Jan@Jansen.com');
 
 CREATE TABLE Huurcontract(
   ID number PRIMARY KEY,
@@ -50,7 +50,7 @@ CREATE TABLE Huurcontract(
   MeerNr number NOT NULL
 );
 
-INSERT INTO Huurcontract VALUES (1, 1, '01-JUN-2016', '02-JUN-2016', 5);
+INSERT INTO Huurcontract VALUES (1, 1, '01-DEC-2001', '02-DEC-2001', 5);
 
 CREATE TABLE BootHuurcontract(
   HuurcontractID number NOT NULL,
@@ -60,8 +60,7 @@ CREATE TABLE BootHuurcontract(
   CONSTRAINT PrimaryKey1 PRIMARY KEY (HuurcontractID, BootID)
 );
 
-INSERT INTO BootHuurcontract VALUES (1, 1);
-INSERT INTO BootHuurcontract VALUES (1, 2);
+INSERT INTO BootHuurcontract VALUES (1, 4);
 
 CREATE TABLE BijkomendProduct(
   ID number PRIMARY KEY,
@@ -82,8 +81,7 @@ CREATE TABLE HuurProduct(
   CONSTRAINT PrimaryKey2 PRIMARY KEY (HuurcontractID, BijkomendProductID)
 );
 
-INSERT INTO HuurProduct VALUES (1, 1, 10);
-INSERT INTO HuurProduct VALUES (1, 2, 10);
+INSERT INTO HuurProduct VALUES (1, 1, 4);
 
 CREATE TABLE "Admin"(
   ID number Primary Key,

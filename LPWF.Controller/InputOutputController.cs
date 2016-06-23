@@ -15,6 +15,16 @@ namespace LPWF.Controller
             Write(ToWrite.ToString());
         }
 
+        public IEnumerable<string[]> ReadFromCSV()
+        {
+            List<string> stringlist = Read("input.csv").ToList();
+            foreach (string S in stringlist)
+            {
+                yield return S.Split(';');
+            }
+            yield break;
+        }
+
         private void Write(string ToWrite)
         {
             using (StreamWriter wrt = new StreamWriter("output.txt"))
@@ -22,6 +32,18 @@ namespace LPWF.Controller
                 wrt.Write(ToWrite);
             }
                 
+        }
+
+        private IEnumerable<string> Read(string location)
+        {
+            using (StreamReader red = new StreamReader(location))
+            {
+                while (!red.EndOfStream)
+                {
+                    yield return red.ReadLine();
+                }
+                yield break;
+            }
         }
     }
 }

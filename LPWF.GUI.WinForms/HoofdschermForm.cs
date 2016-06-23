@@ -166,5 +166,11 @@ namespace LPWF.GUI.WinForms
             BerekenForm Ber = new BerekenForm();
             Ber.Show();
         }
+
+        private void BtnWeer_Click(object sender, EventArgs e)
+        {
+            WeerForm Weer = new WeerForm();
+            Weer.Show();
+        }
     }
 }
